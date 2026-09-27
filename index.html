@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Temporizador de 1 min para Tarefas</h1>
+        <div class="linha-input">
+            <div class="conteiner-pin">
+                <input id="pin-acesso" type="password" placeholder="PIN de Acesso" style="width: 150px; height: 15px;">
+                <img id="olho-pin" src="assets/eyeclosed.png" style="width: 30px; cursor: pointer;">
+            </div>
+            <button id="btn-tema">Modo Claro/Escuro</button>
+        </div>
+    </header>
+
+    <img id="img-promo" src="assets/promo.png">
+    <div class="container">
+        <h2>Adicionar nova tarefa</h2>
+        <div class="linha-input">
+            <input id="nome-tarefa" type="text" placeholder="Digite sua tarefa aqui">
+            <button id="Adicionar">Adicionar</button>
+        </div>
+        <div class="area-mensagem">
+            <h3 class="sumido" id="erro-adicionar">Por favor, insira um título.</h3>
+            <h3 class="sumido" id="sucesso-adicionar">Tarefa adicionada com sucesso!</h3>
+        </div>
+    </div>
+    <div class="tarefa-aberta sumido">
+        <h2 class="titulo-tarefa">Titulo da tarefa</h2>
+        <div>
+            <h1 id="tempo" class="timer">01:00</h1>
+            <h3 id="status">Status</h3>
+            <div class="btns-timer">
+                <button id="btn-iniciar">Iniciar</button>
+                <button id="btn-pausar">Pausar</button>
+            </div>
+        </div>
+        <div class="area-mensagem">
+            <h3 id="mensagem-final" class="sumido">Tarefa concluída!</h3>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

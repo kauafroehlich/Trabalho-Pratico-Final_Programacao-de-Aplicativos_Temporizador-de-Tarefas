@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+body {
+    font-family: "Google Sans", sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+body.modo-escuro {
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    padding: 10px 30px;
+    display: flex; 
+    justify-content: space-between; /*um pra esquerda e otro pra direita*/
+    align-items: center;
+    z-index: 1000; /*mais pra frente*/
+    border: 1px solid #ddd;
+}
+header h1 {
+    font-size: 20px;
+}
+body.modo-escuro header {
+    background-color: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+.conteiner-pin {
+    width: 210px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body.modo-escuro .conteiner-pin {
+    background-color: #222;
+}
+
+.sumido {
+    display: none;
+}
+
+#img-promo {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.container,
+.tarefa-aberta {
+    position: relative;
+    margin-top: 60px;
+    background-color: #ff9563;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+}
+
+.container {
+    margin-top: 100px;
+}
+.tarefa-aberta h2 {
+    margin-top: 0px;
+    text-align: left;
+}
+
+.container h2 {
+    margin-top: 0px;
+    text-align: left;
+}
+
+h2.tarefa-aberta {
+    margin: 0px;
+}
+
+body.modo-escuro .container, body.modo-escuro .tarefa-aberta {
+    background-color: #333;
+    border-color: #c74d15;
+
+}
+
+input {
+    padding: 12px 20px;
+    width: 90%;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.linha-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#Adicionar {
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    background-color: #e05c1f;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#Adicionar:hover {
+    background-color: #c74d15;
+}
+
+.area-mensagem {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#erro-adicionar,
+#sucesso-adicionar {
+    margin: 0;
+}
+
+#btn-tema {
+    padding: 12px 24px;
+    width: 210px;
+    height: 42px;
+    border-radius: 50px;
+    background-color: #222;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: none;
+}
+
+body.modo-escuro #btn-tema {
+    background-color: #fff;
+    color: #222;
+}
+
+
+.btns-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.btns-timer button {
+    padding: 10px 24px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.btns-timer button:disabled {
+    color: #c4c4c4;
+    transform: scale(0.90);
+    cursor: default;
+}
+
+#btn-iniciar {
+    background-color: #22c55e;
+}
+
+#btn-iniciar:not(:disabled):hover {
+    background-color: #16a34a;
+}
+
+#btn-pausar {
+    background-color: #e94e43;
+}
+
+#btn-pausar:not(:disabled):hover {
+    background-color: #eb2424;
+}
+
+.titulo-tarefa {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#tempo {
+    font-size: 90px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    cursor: pointer
+}
+
+#status {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#mensagem-final {
+    margin: 0;
+}
