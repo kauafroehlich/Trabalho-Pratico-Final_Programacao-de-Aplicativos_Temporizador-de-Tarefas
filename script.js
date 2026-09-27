@@ -49,7 +49,7 @@ adicionar.addEventListener("click", () => {
         sucessoAdicionar.classList.remove("sumido");
         setTimeout(() => {
             sucessoAdicionar.classList.add("sumido");
-        }, 3000);
+        }, 3067);
         
         //relogio
         clearInterval(relogio);                 
